@@ -1,0 +1,109 @@
+* {
+  box-sizing: border-box;
+}
+
+h1, ul, li {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+body {
+  margin: 0;
+  padding: 20px;
+  font-family: "Lucida Sans Unicode", "Lucida Grande", sans-serif;
+  color: white;
+  background-color: #2b80ab;
+}
+.weather-forecast {
+  background-color: #3499cb;  
+}
+
+.weather-forecast__title {
+  width: 66%;
+  margin: 0 auto;
+}
+
+.weather-forecast__list-of-cities {
+  width: 66vw;
+  height: 40vw;
+  margin: 0 auto;
+
+  font-size: 0;
+  
+  background-color: white;
+  border: 2px solid white;
+}
+
+.weather-forecast__list-of-cities:hover .city{
+  opacity: 0.4;
+  transition: opacity .2s ease-in;
+}
+
+.weather-forecast__list-of-cities .city {
+  display: inline-block;
+  font-size: 16px;
+  height: 25%;
+  border: 2px solid white;
+  transition: opacity .2s ease-in;
+}
+
+.weather-forecast__list-of-cities .city:hover {
+  opacity: 1;
+  transition: opacity .2s ease-in;
+}
+
+.city:nth-child(1) { background-color: #3499cb;}
+.city:nth-child(2) { background-color: #32cbcb;}
+.city:nth-child(3) { background-color: #996698;}
+.city:nth-child(4) { background-color: #c14646;}
+.city:nth-child(5) { background-color: #e1664a;}
+.city:nth-child(6) { background-color: #fecb68;}
+.city:nth-child(7) { background-color: #98cb99;}
+.city:nth-child(8) { background-color: #659898;}
+.city:nth-child(9) { background-color: #cc6698;}
+.city:nth-child(10) { background-color: #319866;}
+.city:nth-child(11) { background-color: #666698;}
+
+.city-name, 
+.city-temperature {
+  display: block;
+  text-align: center;
+}
+
+.city-name {
+  margin-top: 0.9em;
+}
+
+.weather-forecast__advice {
+  width: 66%;
+  margin: 0 auto;
+}
+
+.col_1 {width: 100%;}
+.col_3 {width: 33.333%;}
+.col_4 {width: 25%;}
+
+@media (max-width: 500px)
+{
+  body, 
+  .weather-forecast__list-of-cities .city {
+    font-size: 8px;
+  }
+}
+
+@media (max-width: 700px) and (min-width: 500px)
+{
+  body, 
+  .weather-forecast__list-of-cities .city {
+    font-size: 12px;
+  }
+}
+
+@media (min-width: 900px)
+{
+  body, 
+  .weather-forecast__list-of-cities .city {
+    font-size: 20px;
+  }
+}
